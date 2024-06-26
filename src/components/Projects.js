@@ -13,32 +13,32 @@ export const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
+      imgUrl: "./images/chocolexa.png",
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: "./images/brandCollab.png",
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: "./images/dasoftLand.png",
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: "./images/bhabani.png",
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: "./images/school.png",
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
       imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
     },
   ];
 
@@ -50,12 +50,12 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
-                  className={
+                  className={ 
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
+                  <p className=" max-md:text-[10px]">
                     Hello! I'm Satyaprakash, a passionate coder and innovative
                     developer. I specialize in turning complex problems into
                     elegant solutions through code. With a knack for both
