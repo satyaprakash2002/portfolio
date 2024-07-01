@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
@@ -11,34 +10,40 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Chocolexa",
+      description: "A cake and Bakery Shop",
       imgUrl: "./images/chocolexa.png",
+      url: "http://example.com/chocolexa",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Brand Collab",
+      description: "A influencer brand collaboration platform",
       imgUrl: "./images/brandCollab.png",
+      url: "http://example.com/brandcollab",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Da Soft",
+      description: "A service providing company",
       imgUrl: "./images/dasoftLand.png",
+      url: "http://example.com/dasoft",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Bhabani Instrumentals",
+      description: "A instruments selling company",
       imgUrl: "./images/bhabani.png",
+      url: "http://example.com/bhabani",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "School AI supporter",
+      description: "Enhances school management systems",
       imgUrl: "./images/school.png",
+      url: "http://example.com/school",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Modern Design Landing Page",
+      description: "Made a modern Landing Page",
+      imgUrl: "./images/ochi.png",
+      url: "http://example.com/modernlanding",
     },
   ];
 
@@ -50,12 +55,12 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
-                  className={ 
+                  className={
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
                   <h2>Projects</h2>
-                  <p className=" max-md:text-[10px]">
+                  <p className="max-md:text-[10px]">
                     Hello! I'm Satyaprakash, a passionate coder and innovative
                     developer. I specialize in turning complex problems into
                     elegant solutions through code. With a knack for both
@@ -66,21 +71,6 @@ export const Projects = () => {
                     extraordinary together!
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    {/* <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                      </Nav.Item>
-                    </Nav> */}
                     <Tab.Content
                       id="slideInUp"
                       className={
@@ -94,25 +84,6 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      
-                      {/* <Tab.Pane eventKey="second">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane> */}
                     </Tab.Content>
                   </Tab.Container>
                 </div>
@@ -121,7 +92,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} />
     </section>
   );
 };
